@@ -8,11 +8,11 @@ const head2 = document.querySelector(".head2");
 const mainElement = document.querySelector("main");
 signinBtn.addEventListener("click", () => {
   bodyElement.style.backgroundColor = "#FF2424";
-  bodyElement.style.transition = "all 1.5s ease-in-out";
+  bodyElement.style.transition = "all 1s ease-in-out";
   mainElement.style.backgroundColor = "#FF3737";
-  mainElement.style.transition = "all 1.5s ease-in-out";
+  mainElement.style.transition = "all 1s ease-in-out";
   signupForm.style.transform = "translateX(-152%)";
-  signupForm.style.transition = "all 1.5s ease-in-out";
+  signupForm.style.transition = "all 1s ease-in-out";
   head1.style.opacity = "0";
   function interval1() {
     signupForm.style.transform = "initial";
@@ -23,15 +23,15 @@ signinBtn.addEventListener("click", () => {
     head2.style.opacity = "1";
     clearInterval(myinterval1);
   }
-  const myinterval1 = setInterval(interval1, 1500);
+  const myinterval1 = setInterval(interval1, 1000);
 });
 signupBtn.addEventListener("click", () => {
   bodyElement.style.backgroundColor = "#1686e7";
-  bodyElement.style.transition = "all 1.5s ease-in-out";
+  bodyElement.style.transition = "all 1s ease-in-out";
   mainElement.style.backgroundColor = "#027EED";
-  mainElement.style.transition = "all 1.5s ease-in-out";
+  mainElement.style.transition = "all 1s ease-in-out";
   signinForm.style.transform = "translateX(152%)";
-  signinForm.style.transition = "all 1.5s ease-in-out";
+  signinForm.style.transition = "all 1s ease-in-out";
   head2.style.opacity = "0";
   function interval2() {
     signinForm.style.transform = "initial";
@@ -42,5 +42,5 @@ signupBtn.addEventListener("click", () => {
     head1.style.opacity = "1";
     clearInterval(myinterval2);
   }
-  const myinterval2 = setInterval(interval2, 1500);
+  const myinterval2 = setInterval(interval2, 1000);
 });
